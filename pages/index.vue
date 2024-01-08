@@ -84,7 +84,7 @@
     </div>
     <div class="footer mt-60 pb-24 flex flex-col space-y-3">
       <LinearLine />
-      <div class="flex justify-between items-center text-third-gray dark:text-white font-['Montserrat']">
+      <div class="flex justify-between items-center text-third-gray dark:text-white font-['Poppins'] text-[16px]">
         <span v-for="text in footerTexts" :key="text">{{ text }}</span>
       </div>
     </div>
