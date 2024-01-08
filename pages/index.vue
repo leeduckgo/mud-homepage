@@ -6,13 +6,11 @@
         <p class="text-xl font-minecraft">- rootMUD -</p>
       </div>
       <div class="links flex items-center space-x-5 text-black-1 dark:text-white font-['Poppins'] text-[17px]">
-        <a v-for="link in links" :key="link" class="group relative h-7 flex items-center cursor-pointer">
-          <span>{{ link }}</span>
-          <img class="w-6 h-6 dark:brightness-0 dark:invert" src="~/assets/svg/down-select.svg" alt="select">
-          <p
-            class="hidden group-hover:flex absolute -bottom-3 left-1/2 -translate-x-1/2 w-[57px] h-3 rounded-[2px] bg-[#FFDC02] justify-center items-center text-[8px] font-['Poppins']">
-            Coming soon
-          </p>
+        <a href="https://x.com/0xleeduckgo" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="#1DA1F2" viewBox="0 0 24 24">
+            <path
+              d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+          </svg>
         </a>
         <div class="flex justify-center ml-2" @click="toggleColorMode">
           <input type="checkbox" name="light-switch" class="light-switch sr-only" />
@@ -82,10 +80,20 @@
         </div>
       </div>
     </div>
+
     <div class="footer mt-60 pb-24 flex flex-col space-y-3">
       <LinearLine />
-      <div class="flex justify-between items-center text-third-gray dark:text-white font-['Poppins'] text-[16px]">
-        <span v-for="text in footerTexts" :key="text">{{ text }}</span>
+      <div class="flex flex-col text-third-gray dark:text-white font-['Poppins'] text-[12px]">
+        <div class="flex items-center">
+          <span v-for="text in footerTexts2" :key="`second-${text}`">{{ text }}</span>
+        </div>
+        <div class="flex items-center">
+          <span v-for="text in footerTexts3" :key="`second-${text}`">{{ text }}</span>
+        </div>
+        <br>
+        <div class="flex justify-between items-center">
+          <span v-for="text in footerTexts" :key="`first-${text}`">{{ text }}</span>
+        </div>
       </div>
     </div>
   </div>
@@ -107,8 +115,16 @@ const buttons = [
 ]
 const footerTexts = [
   'Copyright © 2023 rootMUD. All rights reserved.',
-  'Terms of Use & Privacy Policy',
+  'Terms of Use & Privacy Policy'
 ]
+
+const footerTexts2 = [
+  'rootMUD is a community fair engraving project where community developers voluntarily participate in technology development and community operations out of interest. ',
+]
+const footerTexts3 = [
+  'Community developers are not responsible for the value or market performance of the token itself, as the price of a token is typically determined by market supply and demand and investor behavior.',
+]
+// 'rootMUD is a community fair engraving project where community developers voluntarily participate in technology development and community operations out of interest. Community developers are not responsible for the value or market performance of the token itself, as the price of a token is typically determined by market supply and demand and investor behavior.'
 
 const colorMode = useColorMode()
 const toggleColorMode = () => {
