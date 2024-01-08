@@ -3,7 +3,7 @@
     <div class="header h-16 flex justify-between items-center">
       <div class="flex items-center space-x-3">
         <img src="/img/logo.png" alt="logo" class="h-12" />
-        <img src="/img/logo-title.png" alt="logo" class="h-6 dark:brightness-0 dark:invert" />
+        <p class="text-xl font-minecraft">- rootMUD -</p>
       </div>
       <div class="links flex items-center space-x-5 text-black-1 dark:text-white font-['Poppins'] text-[17px]">
         <a v-for="link in links" :key="link" class="group relative h-7 flex items-center cursor-pointer">
@@ -31,16 +31,20 @@
         <div class="texts flex flex-col space-y-6">
           <div class="titles flex flex-col space-y-9">
             <div class="flex flex-col space-y-4 text-black-1 dark:text-white">
-              <span class="w-[450px] text-[72px] leading-none font-['Poppins'] font-medium tracking-[0.6px]">Web 3 AI
-                Powerhouse</span>
-              <span class="w-[510px] text-[36px] leading-tight font-['Poppins']">For Search, AIGC, Data
-                Marketplace, and Apps</span>
+              <span class="w-[600px] text-[32px] leading-none font-minecraft font-medium tracking-[0.6px]">MUD Space based
+                on AI & Web3</span>
             </div>
-            <LinearLine classText="w-[615px]" />
+
           </div>
-          <div class="flex items-center space-x-2 text-third-gray dark:text-gray-4 text-[21px]">
-            <span class="leading-8">Powered by BNB Greenfield</span>
-            <img class="w-8 h-8" src="/img/logo-bnb.png" alt="bnb">
+
+          <div class="flex items-center space-x-2 text-third-gray dark:text-gray-4 text-[16px]">
+            <span>
+              <p>rootMUD is an AI-powered text-based virtual community with the following features:</p>
+              <p>* Use BRC20 as login token</p>
+              <p>* All elements of the community, such as maps, etc., are governed through DAO</p>
+              <p>* All components in the community are pluggable to fully unleash the potential of Developer GC</p>
+              <p>* User data and item data are stored on the blockchain, enabling data to be used across games</p>
+            </span>
           </div>
         </div>
         <div class="buttons flex items-center space-x-8">
@@ -50,53 +54,31 @@
           </template>
         </div>
       </div>
-      <img class="w-[568px]" src="/img/dataism.png" alt="dataism">
-    </div>
-    <div class="mt-[72px]">
-      <img class="mx-auto h-[30px] dark:brightness-0 dark:invert" src="/img/clients.png" alt="clients">
-    </div>
-    <div class="mt-[26px] text-center text-third-gray dark:text-gray-5 text-[20px] font-['Poppins']">
-      Trusted by and integrated with the world’s most ambitious teams
+      <img class="w-[568px]" src="/img/mud.png" alt="rootMUD">
     </div>
     <div class="mt-40 mx-auto w-[1160px] flex flex-col items-center space-y-[142px]">
       <div class="w-full flex justify-start items-center space-x-60">
         <div class="w-[555px] flex flex-col space-y-6 items-start">
-          <div class="w-full flex flex-col space-y-2 text-[20px] text-second-gray dark:text-white font-['Poppins']">
-            <span>MOVESPACE is an ecosystem of applications powered by the MoveSpace vector datahouse. We utilize
-              decentralized storage solutions including BNB Greenfield and Arweave to power on-chain data labeling, data
-              monetization, AI-powered search, AIGC & AI-based UGC, NFT, and gaming use cases.</span>
-            <span>Our team consists of Web 3 natives and veteran builders from Tencent, Huawei, Microsoft, Google, and
-              Netease, etc.</span>
-          </div>
-          <div class="w-[575px] p-2.5">
-            <LinearLine />
-          </div>
-          <TheButton text="Learn more" :colored-border="true" @click="scrollToTop" />
+          <table class="w-full text-[16px] text-second-gray dark:text-white font-['Poppins']">
+            <tr>
+              <td>Week 0x01. Launch MUD Space</td>
+              <td>[----] 0%</td>
+            </tr>
+            <tr>
+              <td>Week 0x02. Launch On-Chain Ascii Pet Module</td>
+              <td>[----] 0%</td>
+            </tr>
+            <tr>
+              <td>Week 0x03. Launch On-Chain Ascii Pet 2.0 with AI abilities</td>
+              <td>[----] 0%</td>
+            </tr>
+            <tr>
+              <td>Week 0x04. Launch rootMUD v1.0.0</td>
+              <td>[----] 0%</td>
+            </tr>
+          </table>
         </div>
-        <div class="title text-black-2 dark:text-white text-[40px] font-['Poppins'] font-semibold">ABOUT US</div>
-      </div>
-      <div class="w-full flex justify-start items-center space-x-60">
-        <div class="title w-[555px] text-black-2 dark:text-white text-[40px] font-['Poppins'] font-semibold">APPLICATIONS
-        </div>
-        <div class="w-[555px] flex flex-col space-y-6 items-start">
-          <div class="w-full flex flex-col space-y-2 text-[20px] text-second-gray dark:text-white font-['Poppins']">
-            <span>The MoveSpace ecosystem is a set of applications built on MoveSpace’s vector datahouse.</span>
-            <ul class="list-disc">
-              <li>MoveSpace Data Explorer: a vector-data-powered search engine to power Web 3 native search, beginning
-                with Galxe & Bodhi.</li>
-              <li>MoveSpace Data Marketplace: a data publishing and marketplace platform built on BNBChain & BNB
-                Greenfield.</li>
-              <li>MoveSpace AI Dashboard: a multi-modal AIGC platform that allows users to upload data on-chain and
-                generate
-                AIGC based on their textual data and image data.</li>
-              <li>MoveSpace Data Labeling Platform: an on-chain data labeling platform for Large language models and
-                applications, built on BNBChain and BNB Greenfield.</li>
-            </ul>
-          </div>
-          <div class="w-[575px] p-2.5">
-            <LinearLine />
-          </div>
-          <TheButton text="Learn more" :colored-border="true" @click="scrollToTop" />
+        <div class="title text-black-2 dark:text-white text-[40px] font-['Poppins'] font-semibold font-minecraft">ROAD MAP
         </div>
       </div>
     </div>
@@ -111,23 +93,20 @@
 
 <script setup>
 const links = [
-  'Data Explorer',
-  'Data Marketplace',
-  'AI Dashboard',
-  'Data Labeling Platform',
+
 ]
 const buttons = [
   {
-    text: 'testnet',
+    text: 'MINT BRC20',
     coloredBorder: true,
   },
   {
-    text: 'read docs',
+    text: 'READ DOCS',
     coloredBorder: false,
   },
 ]
 const footerTexts = [
-  'Copyright © 2023 MOVESPACE. All rights reserved.',
+  'Copyright © 2023 rootMUD. All rights reserved.',
   'Terms of Use & Privacy Policy',
 ]
 

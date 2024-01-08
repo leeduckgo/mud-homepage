@@ -41,6 +41,7 @@ const props = defineProps({
 
 const hover = ref(false)
 const btnText = computed(() => {
-  return (hover.value && props.changeText) ? 'Coming soon' : props.text
+  return props.text
+  // return (hover.value && props.changeText) ? 'Coming soon' : props.text
 })
 </script>

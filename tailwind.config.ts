@@ -7,6 +7,9 @@ const config: Config = {
       width: {
         'content': '1280px',
       },
+      fontFamily: {
+        minecraft: ['Minecraft'],
+      },
       colors: {
         'black-1': '#1E1E2D',
         'navig1': '#CFCFCF',
