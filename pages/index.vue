@@ -24,6 +24,7 @@
         </div>
       </div>
     </div>
+    <!-- rootMUD Intro -->
     <div class="slogon mt-12 flex justify-between items-center">
       <div class="flex flex-col space-y-12">
         <div class="texts flex flex-col space-y-6">
@@ -54,7 +55,10 @@
       </div>
       <img class="w-[568px]" src="/img/mud.png" alt="rootMUD">
     </div>
-    <div class="mt-40 mx-auto w-[1160px] flex flex-col items-center space-y-[142px]">
+
+    <!-- Roadmap -->
+
+    <div class="roadmap mx-auto w-[1160px] flex flex-col items-center space-y-[142px]">
       <div class="w-full flex justify-start items-center space-x-60">
         <div class="w-[555px] flex flex-col space-y-6 items-start">
           <table class="w-full text-[16px] text-second-gray dark:text-white font-['Poppins']">
@@ -81,7 +85,31 @@
       </div>
     </div>
 
-    <div class="footer mt-60 pb-24 flex flex-col space-y-3">
+    <!-- Economic Model -->
+    <div class="slogon mt-12 flex justify-between items-center">
+      <div class="flex flex-col space-y-12">
+        <div class="texts flex flex-col space-y-6">
+          <div class="titles flex flex-col space-y-9">
+            <div class="flex flex-col space-y-4 text-black-1 dark:text-white">
+              <span class="w-[600px] text-[32px] leading-none font-minecraft font-medium tracking-[0.6px]">Token Economic Model</span>
+            </div>
+
+          </div>
+
+          <div class="flex items-center space-x-2 text-third-gray dark:text-gray-4 text-[16px]">
+            <span>
+              <p>The right to hold/staking the inscriptions: </p>
+              <p>* Got matching badges in the rootMUD</p>
+              <p>* Items can be purchased at discounted prices in rootMUD</p>
+              <p>* Receive dividends from rootMUD’s future earnings</p>
+            </span>
+          </div>
+        </div>
+      </div>
+      <img class="w-[568px]" src="/img/token-model.png" alt="rootMUD">
+    </div>
+
+    <div class="footer mt-12 pb-24 flex flex-col space-y-3">
       <LinearLine />
       <div class="flex flex-col text-third-gray dark:text-white font-['Poppins'] text-[12px]">
         <div class="flex items-center">
@@ -114,7 +142,7 @@ const buttons = [
   },
 ]
 const footerTexts = [
-  'Copyright © 2023 rootMUD. All rights reserved.',
+  '𑖌𑖼Copyright © 2023 rootMUD. All rights reserved.𑖌𑖼',
   'Terms of Use & Privacy Policy'
 ]
 

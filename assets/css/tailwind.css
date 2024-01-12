@@ -9,3 +9,8 @@
     font-family: 'Minecraft';
     src: url('../fonts/Minecraft.ttf');
   }
+
+.roadmap {
+  margin-top: 100px; /* Adjust as needed */
+  margin-bottom: 100px; /* Adjust as needed */
+}
