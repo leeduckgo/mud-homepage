@@ -142,7 +142,7 @@ const buttons = [
   },
 ]
 const footerTexts = [
-  '𑖌𑖼Copyright © 2023 rootMUD. All rights reserved.𑖌𑖼',
+  '𑖌𑖼Copyright © 2024 rootMUD. All rights reserved.𑖌𑖼',
   'Terms of Use & Privacy Policy'
 ]
 
