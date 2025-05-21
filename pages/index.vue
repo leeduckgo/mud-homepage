@@ -38,18 +38,31 @@
 
           <div class="flex items-center space-x-2 text-third-gray dark:text-gray-4 text-[16px]">
             <span>
-              <p>rootMUD is an AI-powered text-based virtual community with the following features:</p>
-              <p>* Use BRC20 as login token</p>
-              <p>* All elements of the community, such as maps, etc., are governed through DAO</p>
-              <p>* All components in the community are pluggable to fully unleash the potential of Developer GC</p>
-              <p>* User data and item data are stored on the blockchain, enabling data to be used across games</p>
+              <p>rootMUD is an AI-powered text-based virtual community. Now Buidling: </p>
+              <p>
+                <b>* MoveDID: </b>
+                <a href="https://did.rootmud.xyz/" target="_blank" class="text-blue-500 underline text-[16px]">https://did.rootmud.xyz/</a>
+              </p>
+              <p>* <b>AI Tool Kit: </b>
+                <a href="https://datai.rootmud.xyz/" target="_blank" class="text-blue-500 underline text-[16px]">
+                    https://datai.rootmud.xyz/
+                  </a>
+              </p>
+              <p>
+                  <b>* Move Game Kit: </b>
+                  <a href="https://gamekit.rootmud.xyz" target="_blank" class="text-blue-500 underline text-[16px]">
+                    https://move-game-kit.rootmud.xyz
+                  </a>
+              </p>
             </span>
           </div>
         </div>
         <div class="buttons flex items-center space-x-8">
           <template v-for="button in buttons" :key="button">
+            <a :href="button.link" target="_blank">
             <TheButton :text="button.text" :uppercase="true" :high="true" :colored-border="button.coloredBorder"
-              :change-text="true" />
+              :change-text="true" :to="button.link" />
+              </a>
           </template>
         </div>
       </div>
@@ -63,20 +76,33 @@
         <div class="w-[555px] flex flex-col space-y-6 items-start">
           <table class="w-full text-[16px] text-second-gray dark:text-white font-['Poppins']">
             <tr>
-              <td>Week 0x01. Launch MUD Space</td>
-              <td>[----] 0%</td>
+              <td>Dev AI SaaS System for AI Agents❤️</td>
+              <td>[■■■■■□□□□□] 50%</td>
             </tr>
+
             <tr>
-              <td>Week 0x02. Launch On-Chain Ascii Pet Module</td>
-              <td>[----] 0%</td>
+              <td>Dev the MoveDID</td>
+              <td>[■■■■■■■■□□] 80%</td>
             </tr>
+
             <tr>
-              <td>Week 0x03. Launch On-Chain Ascii Pet 2.0 with AI abilities</td>
-              <td>[----] 0%</td>
+              <td>Dev Move-based On Chain Games</td>
+              <td>[■■□□□□□□□□] 20%</td>
             </tr>
+
             <tr>
-              <td>Week 0x04. Launch rootMUD v1.0.0</td>
-              <td>[----] 0%</td>
+              <td>Movedrop</td>
+              <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---- TODO ----</td>
+            </tr>
+
+            <tr>
+            <td>The Token Migration to Move</td>
+              <td>[■■□□□□□□□□] 20%</td>
+            </tr>
+
+            <tr>
+            <td>Open Token pairs on Defi</td>
+              <td>[□□□□□□□□□□] 00%</td>
             </tr>
           </table>
         </div>
@@ -101,7 +127,7 @@
               <p>The right to hold/staking the inscriptions: </p>
               <p>* Got matching badges in the rootMUD</p>
               <p>* Items can be purchased at discounted prices in rootMUD</p>
-              <p>* Receive dividends from rootMUD’s future earnings</p>
+              <p>* Receive dividends from rootMUD's future earnings</p>
             </span>
           </div>
         </div>
@@ -133,12 +159,9 @@ const links = [
 ]
 const buttons = [
   {
-    text: 'MINT BRC20',
-    coloredBorder: true,
-  },
-  {
-    text: 'READ DOCS',
+    text: 'Github',
     coloredBorder: false,
+    link: 'https://github.com/rootmud',
   },
 ]
 const footerTexts = [
