@@ -49,15 +49,15 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
   };
   
   const descriptions = {
-    en: "cccccc",
-    zh: "AI 友好的粤语语料库系统与服务真实环境的 AI Agent 系统",
-    yue: "AI 友好嘅粵語語料庫系統同埋服務真實環境嘅 AI Agent 系統"
+    en: "AI Agent x Web3",
+    zh: "AI Agent x Web3",
+    yue: "AI Agent x Web3"
   };
 
   return {
     title: titles[locale],
     description: descriptions[locale],
-    keywords: ["粤语", "AI", "人工智能", "Cantonese", "LLM", "Safty"],
+    keywords: ["Web3", "AI", "人工智能",  "LLM", "Agent"],
     authors: [{ name: "rootMUD DAO" }],
     viewport: "width=device-width, initial-scale=1",
     robots: "index, follow",
