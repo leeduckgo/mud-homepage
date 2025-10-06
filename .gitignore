@@ -6,6 +6,11 @@
 .cache
 dist
 
+.next
+/.next/
+/out/
+/build
+/public/feeds/
 # Node dependencies
 node_modules
 
