@@ -1,6 +1,6 @@
-# 🥟 AI DimSum Lab Homepage
+# 🥟 rootMUD DAO Homepage
 
-一个现代化的粤语 AI 实验室主页，使用 Next.js 13+ App Router、Tailwind CSS v4、DaisyUI 5.0.43 和 Framer Motion 构建。
+一个现代化的主页，使用 Next.js 13+ App Router、Tailwind CSS v4、DaisyUI 5.0.43 和 Framer Motion 构建。
 
 ## ✨ 特性
 
@@ -116,10 +116,8 @@ frontend/
 
 ## 📞 联系我们
 
-- 项目主页: [AI DimSum Lab](https://github.com/your-username/AI-DimSum-Lab-Homepage)
-- 问题反馈: [Issues](https://github.com/your-username/AI-DimSum-Lab-Homepage/issues)
-- 讨论区: [Discussions](https://github.com/your-username/AI-DimSum-Lab-Homepage/discussions)
+- Twitter: [rootMUD](https://twitter.com/rootmud)
 
 ---
 
-**最后更新**: 2024年12月
+**最后更新**: 2025.10
